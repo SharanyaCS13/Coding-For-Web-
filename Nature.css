@@ -6,6 +6,6 @@ div{
 
 image{
 	width: 50%;
-        height: 50%;
+        height: auto;
 	margin-top: 200px;
 }
