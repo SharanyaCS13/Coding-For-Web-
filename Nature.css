@@ -1,20 +1,11 @@
-
-
-
-
 html{
-    background-color: aquamarine;
+	background-color: aquamarine;
 }
-
-
 div {
-    text-align: centre;
-   
-    
+	text-align: center;
 }
-
 nature{
-    width: 50%;
-    height: auto;
-     margin-top: 200px;
+	width: 50%;
+	height: auto;
+	margin-top: 300px;
 }
