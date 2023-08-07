@@ -2,10 +2,13 @@ html{
 	background-color: aquamarine;
 }
 div {
-	text-align: centre;
+	display: flex;
+	justify-content: centre;
+	align-items: centre;
+	
 }
 nature{
 	width: 50%;
-
+        height: auto;
 	margin-top: 300px;
 }
