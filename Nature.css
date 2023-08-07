@@ -1,11 +1,18 @@
-html{
-	background-color: aquamarine;
-}
-div{
-	text-align: center;
 
-image{
-	width: 50%;
-        height: auto;
-	margin-top: 200px;
+
+html{
+    background-color: aquamarine;
+}
+
+
+div {
+    text-align: center;
+   
+    
+}
+
+img{
+    width: 50%;
+    height: auto;
+     margin-top: 300px;
 }
