@@ -6,11 +6,12 @@ html{
 
 
 div {
-    text-align: centre;    
+    text-align: centre;
+    margin-bottom: 400px;
 }
 
 img{
     width: 50%;
     height: auto;
-    margin-bottom: 400px;
+    
 }
