@@ -1,0 +1,60 @@
+/* Your CSS goes here --------------------- */
+#selectedImage{
+    width: 400px;
+    height: 400px;
+}
+
+hr{
+    color: black;
+}
+
+#container{
+     position: relative; /* Make the container a positioning context */
+            display: inline-block;
+    text-align: start;
+    
+
+}
+
+image {
+            max-width: 80%; /* Ensure the image doesn't exceed its container */
+            height: auto; /* Maintain the image's aspect ratio */
+        }
+#textInput {
+            width: 50%;
+            padding: 10px;
+        }
+#textInput2 {
+            width: 50%;
+            padding: 10px;
+        }
+
+        #displayText {
+            position: absolute;
+            top: 0; /* Place text at the top */
+            left: 50%; /* Center the text horizontally */
+            transform: translateX(-50%); /* Adjust horizontal centering */
+            color: black;
+            font-size: 50px;
+             
+
+        }
+  #displayText2 {
+            position: absolute;
+             left: 50%;
+            bottom: 0;
+            transform: translateX(-50%); /* Adjust horizontal centering */
+            color: white;
+            font-size: 30px;
+      
+ }
+
+#incrementStroke{
+    font-size: 5px;
+    
+}
+
+#decrementStroke{
+    font-size: 5px;
+}
+

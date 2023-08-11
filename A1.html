@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Insert relevant content inside the following meta tags-->
+    <meta name="author" content="Author Name">
+    <meta name="description" content="This is a Good Morning Message Maker">
+    <meta property="og:title" content="Good Morning Message Maker"/>
+    <meta property="og:description" content="This is a Good Morning Message Maker"/>
+    
+    <title>Good Morning Message Maker</title>
+    
+    <!-- No need to edit this-->
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+
+    <!-- Links to boilerplate CSS and JS files -- DO NOT CHANGE or EDIT THESE!!! -->
+    <link href="./template-files/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./template-files/script.js" defer></script> 
+    <script type="text/javascript" src="./template-files/html2canvas.js" defer></script> 
+
+
+
+    <!-- Links to YOUR CSS and JS files -->
+    <link href="A1.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="A1.js" defer></script>
+
+</head>
+    
+<body>
+
+    <header>        
+        
+        <!--DO NOT EDIT THIS -->
+        <button id="openPopup" onclick="showPopup()"> ? </button>
+        
+        <!--Insert your Names after the dash -->
+        <h1>'Good Morning Message Maker' – Sharanya Chandrashekar and Ananya Chandorkar</h1>
+    
+    </header>
+    <main>
+
+        <section id="input">
+        <div class="image-dropdown">
+    <label for="imageSelector">Choose an image:</label> <br>
+    <select id="imageSelector">
+        <option value="default.png">None</option>
+      <option value="sunrise.jpeg">Sunrise</option>
+      <option value="flowers.jpeg">Flowers</option>
+      <option value="still-life.jpeg">Still Life</option>
+    </select>
+  </div>
+            <hr>
+            <div>
+                <label>Enter your text:</label> <br>
+           <input type="text" id="textInput" placeholder="Type your text">
+            </div>
+            <hr>
+            <div>
+                <label>Enter your text:</label> <br>
+           <input type="text" id="textInput2" placeholder="Type your text">
+                <hr>
+                <label>Font selector:</label><br>
+         <label>
+        <input type="radio" name="font" value="cursive"> Cursive
+    </label><br>
+    <label>
+        <input type="radio" name="font" value="georgia"> Georgia
+    </label><br>
+    <label>
+        <input type="radio" name="font" value="arial"> Arial
+    </label><br>
+                <hr>
+                <label>Choose font color:</label><br>
+                <select id="fontColorSelect">
+                    <option value="default">None</option>
+<option value="red">Red</option>
+        <option value="skyblue">Sky Blue</option>
+        <option value="lime">Lime</option>
+    </select><br><hr>
+              
+                   <label for="strokeIncrementer">Text Stroke (px):</label>
+    <input type="number" id="strokeIncrementer" value="0">
+    <button id="incrementStroke">▲</button>
+    <button id="decrementStroke">▼</button>
+                
+</div>
+            
+ </section>
+
+        <!-- Button to Save Image | DO NOT EDIT THIS -->
+        
+        <button id="save-img">Save Image</button>
+
+        <section id="output">
+            <div id="container">
+                <img id="selectedImage" src="default.png" alt="Selected Image">
+                <h1 id="displayText"></h1>
+                <h2 id="displayText2"></h2>
+                <!-- Markup for your image and texts go inside this div -->
+                <!-- Use the ID "text-1" for Text 1 -->
+                <!-- Use the ID "text-2" for Text 2 -->          
+            </div>
+            
+        </section>
+    
+    </main>
+    
+    <!--DO NOT EDIT THIS DIV -->
+    <div id="popupCover" onclick="hidePopup()"></div>
+
+    <!-- 
+        Once you are done with your assignment, replace the instructions text inside the div with id "popup" with the following text: This tool was programmed by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute. 
+    -->
+    <div id="popup">
+
+         <p>
+            Coding for the Web '23/24 --- Assignment 1:
+        </p>    
+        <hr>       
+        <p>
+          This page was made by Sharanya Chandrashekar and Ananya Chandorkar, as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute.
+  
+        </p> 
+        
+        <hr>
+
+    </div>
+
+</body>    
