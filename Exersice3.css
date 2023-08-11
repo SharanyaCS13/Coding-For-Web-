@@ -1,0 +1,28 @@
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+#colorButton{
+    background-color: lightcoral;
+    color: lawngreen;
+}
+
+#colorButton:hover{
+    background-color: lawngreen;
+    color: lightcoral;
+}
+
+#sizeButton {
+     background-color: lightcoral;
+    color: lawngreen;
+}
+
+#sizeButton:hover{
+        background-color: lawngreen;
+    color: lightcoral;
+
+}
