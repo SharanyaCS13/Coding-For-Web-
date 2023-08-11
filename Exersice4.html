@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Exersice4.css">
+    
+  <title>Exersice 4</title>
+</head>
+<body>
+  
+    <h1 id="dynamicText">Coding For Web</h1>
+    <input type="text" id="textInput" placeholder="Enter text"><br>
+   <button id="toggleButton">Toggle Subheading</button>
+  <h2 id="subheading">Subheading Text</h2><br>
+    <h3>Font selector</h3>
+    <div class="font-options">
+ <input type="radio" name="font" id="fontArial" value="Arial">
+    <label for="fontArial">Arial</label>
+    <input type="radio" name="font" id="fontTimes" value="Times New Roman">
+    <label for="fontTimes">Times New Roman</label>
+<input type="radio" name="font" id="fontCourier" value="Courier New">
+    <label for="fontCourier">Courier New</label>
+</div><br>
+    <p id="changeableParagraph">This paragraph can change font as per your choice</p>
+    <div class="control">
+    <label for="widthRange">Width:</label>
+    <input type="range" id="widthRange" min="0" max="500" value="250">
+  </div>
+  <div class="control">
+    <label for="heightRange">Height:</label>
+    <input type="range" id="heightRange" min="0" max="300" value="150">
+  </div>
+    <div id="adjustableDiv"></div>
+
+<div class="image-dropdown">
+    <label for="imageSelector">Select an image:</label>
+    <select id="imageSelector">
+      <option value="140 Umesh.jpeg">Image 1</option>
+      <option value="D-mart BLR opp.jpeg">Image 2</option>
+      <option value="MAHE BLR.jpeg">Image 3</option>
+    </select>
+  </div>
+  <img id="selectedImage" src="140 Umesh.jpeg" alt="Selected Image">
+ 
+
+  <script src="Exersice4.js"></script>
+</body>
+</html>

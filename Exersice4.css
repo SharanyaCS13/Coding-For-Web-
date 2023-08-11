@@ -1,0 +1,24 @@
+#subheading {
+  display: none; /* Hide the subheading by default */
+}
+
+.font-options{
+    margin-bottom: auto;
+}
+
+#changeableParagraph{
+    font-family: cursive; /*default */
+}
+
+#adjustableDiv {
+    background-color: lightcoral;
+    width: 400px;
+    height: 400px;
+}
+
+#selectedImage{
+    width: 400px;
+    height: 400px;
+}
+
+
