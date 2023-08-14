@@ -1,0 +1,223 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+
+
+
+
+body {
+  padding: 40px 10%;
+  background-color: rgb(235, 235, 235)
+       
+      
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section > h2 {
+text-align: center;
+line-height: 1;
+border-bottom: 1px solid black;
+padding-bottom: 8px;
+  font-family: 'TiltPrism', sans-serif; /* Use the font family name defined earlier */
+}
+
+section > em {
+display: block;
+margin: 8px 0;
+text-align: center;
+}
+
+section > div {
+  margin: 10px;
+  }
+
+#s1 > div {background-color: yellow;}
+#s2 > div {background-color: #CDEAC0;}
+#s3 > div {background-color: #FFFAE3;}
+#s4 > div {background-color: #FF5964;}
+#s5 > div {background-color: #B8F3FF;}
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+  /* Section 1 */
+  #s1 span {
+    background-color: yellow;
+    mix-blend-mode: difference;
+  }
+
+  /* Section 1 */
+  #s1:nth-of-type(1) span {
+    background-color: yellow;
+    mix-blend-mode: difference;
+    display: block;
+    margin-bottom: 2px;
+    height: 30px;
+  }
+
+  #s1:nth-of-type(1) div:first-child span {
+    display: inline;
+  }
+
+  #s1:nth-of-type(1) div:nth-child(2) span {
+    display: inline-block;
+  }
+
+  #s1:nth-of-type(1) div:nth-child(3) span,
+  #s1:nth-of-type(1) div:nth-child(4) span {
+    display: block;
+  }
+
+  #s1:nth-of-type(1) div:nth-child(4) span {
+    height: auto;
+    text-align: center;
+  }
+
+  /* Section 2 */
+  #s2:nth-of-type(2) div {
+    display: inline-block;
+    margin: auto;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(2),
+  #s2:nth-of-type(2) div:nth-child(3) {
+    width: 600px;
+    display: block;
+    margin: auto;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(4) {
+    width: 100%;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(5) {
+    width: 100vw;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(6),
+  #s2:nth-of-type(2) div:nth-child(7),
+  #s2:nth-of-type(2) div:nth-child(8),
+  #s2:nth-of-type(2) div:nth-child(9) {
+    width: 47%;
+  }
+
+  #s2:nth-of-type(2) div span {
+    background-color: yellow;
+    mix-blend-mode: difference;
+    display: block;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(6) span {
+    width: 50%;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(7) span,
+  #s2:nth-of-type(2) div:nth-child(8) span,
+#s2:nth-of-type(2) div:nth-child(9) span {
+    width: 50vw;
+  }
+
+  #s2:nth-of-type(2) div:nth-child(8) {
+    overflow: hidden;
+  }
+
+ #s2:nth-of-type(2) div:nth-child(9) {
+    overflow: auto;
+  }
+
+  /* Section 3 */
+  #s3:nth-of-type(3) {
+    font-size: 24px;
+  }
+
+ #s3:nth-of-type(3) div:nth-child(2) {
+    font-size: 15px;
+  }
+
+ #s3:nth-of-type(3) div:nth-child(3) {
+    font-size: 1.5vw;
+  }
+
+ #s3:nth-of-type(3) div:nth-child(4) {
+    font-size: 1em;
+  }
+
+  #s3:nth-of-type(3) div:nth-child(5) {
+    font-size: 1rem;
+  }
+
+  /* Section 4 */
+  #s4:nth-of-type(4) div {
+    width: 50%;
+    margin: auto;
+  }
+
+  #s4:nth-of-type(4) div:nth-child(2) {
+    margin-right: 0;
+  }
+
+ #s4:nth-of-type(4) h3 {
+    position: sticky;
+    top: 1rem;
+  }
+
+  #s4:nth-of-type(4) div:nth-child(2) h3 {
+    top: 0;
+    background-color: lightgray;
+  }
+
+  /* Section 5 */
+  #s5:nth-of-type(5) div {
+    width: 20%;
+    position: static;
+  }
+
+  #s5:nth-of-type(5) div:nth-child(2) {
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+  }
+
+  #s5:nth-of-type(5) div:nth-child(3) {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  /* Section 6 */
+  #s6:nth-of-type(6) {
+    position: relative;
+  }
+
+    #s6:nth-of-type(6) div {
+    width: 50%;
+  }
+
+    #s6:nth-of-type(6) div:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 20%;
+  }
+
+    #s6:nth-of-type(6) div:nth-child(3) {
+    position: absolute;
+    left: -40px;
+    mix-blend-mode: difference;
+  }
+
+  /* Section 7 */
+  #s7:nth-of-type(7) div:nth-child(2) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+
+
