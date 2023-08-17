@@ -1,0 +1,208 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+
+body {
+  padding: 40px 10%;
+  background-color: rgb(235, 235, 235) ;  
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+section > h2 {
+text-align: center;
+line-height: 1;
+border-bottom: 1px solid black;
+padding-bottom: 8px;
+}
+
+section > em {
+display: block;
+margin: 8px 0;
+text-align: center;
+}
+
+section > div {padding: 10px;}
+
+
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+
+/* SECTION 1 */
+/* ----------------------------------------------------- */
+
+#s1 span {
+  background-color: ;
+  mix-blend-mode: ;
+}
+
+#s1 > div > p {
+  margin: 0;
+}
+
+#s1 > div {
+  background-color: lightgoldenrodyellow;
+  column-count: 3;
+}
+  
+/* For the first breakpoint (1024px) */
+@media screen and (min-width: 1024px) {
+  #s1 div {
+    background-color: yellow; /* Change background color */
+    column-count: 2; /* Change to two-column layout */
+    font-size: 16px; /* Change font size */
+  }
+}
+
+/* For the second breakpoint (600px) */
+@media screen and (max-width: 600px) {
+  #s1 div {
+    background-color: green; /* Change background color */
+    column-count: 1; /* Change to single-column layout */
+    font-size: 14px; /* Change font size */
+  }
+}
+
+/* SECTION 2 */
+/* ----------------------------------------------------- */
+
+#s2 > div {
+  background-color: #CDEAC0;
+}
+
+#s2 > div > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* For both breakpoints */
+@media screen and (max-width: 1024px) {
+  #s2 {
+    height: 70vh; /* Set parent div to 70% viewport height */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+  }
+  #s2 > div > div:first-child {
+    height: 40px; /* Set fixed height for the first child */
+    background-color: lightblue; /* Set background color */
+  }
+  #s2 > div > div:last-child {
+    flex-grow: 1; /* Expand to fill remaining space */
+    background-color: lightcyan; /* Set background color */
+  }
+}
+
+@media screen and (min-width: 600px) {
+    #s2 > div > div:first-child{
+        background-color: lavender;
+    }
+    
+    #s2 > div > div:last-child{
+        background-color: lightcoral;
+    }
+}
+
+
+
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+
+#s3 > div {
+  background-color: #FF5964;
+}
+
+#s3 > div > div {
+  width: 400px;
+  background-color: white;
+  margin: 10px;
+}
+
+/* For both breakpoints */
+@media screen and (min-width: 600px) {
+  #s3 {
+    display: flex; /* Create flex container */
+    justify-content: space-between; /* Equal spacing */
+  }
+  #s3 > div {
+    width: calc(25% - 10px); /* Equal width with spacing */
+    margin-right: 10px; /* Add spacing */
+  }
+}
+
+
+
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+
+#s4 > div {
+  background-color: #B8F3FF;
+}
+
+#s4 > div > div {
+  background-color: white;
+  margin: 10px;
+}
+
+/* For both breakpoints */
+@media screen and (min-width: 600px) {
+  #s4 {
+    display: flex; /* Create flex container */
+    justify-content: space-between; /* Equal spacing */
+    align-items: center; /* Center along vertical axis */
+  }
+}
+
+/* For the second breakpoint (600px) */
+@media screen and (max-width: 600px) {
+  #s4 {
+    display: block; /* Change to single column layout */
+    text-align: center; /* Center along horizontal axis */
+  }
+}
+
+
+
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+
+#s5 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#s5 > div > span {
+  background-color: #B298DC;
+  padding: 10px;
+  margin: 10px;
+}
+
+#button {
+  padding: 10px;
+  background-color: #BDC696;
+  font-family: 'FT88', monospace;
+  margin: 10px;
+  display: none;
+}
+
+#box {
+ background-color: #B8F3FF;
+ padding: 10px;
+ /* display: none; */
+
+ width: 120px;
+}
+
+#box > ul {
+  margin: 0;
+  padding: 10px;
+} 
+
+
