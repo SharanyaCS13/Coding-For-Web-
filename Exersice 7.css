@@ -1,0 +1,60 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  width: 100%;
+  z-index: 1000; /* To ensure it's above other content */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+
+/* Style for sections */
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    
+}
+
+div label{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Adjust the value to determine when the label becomes sticky */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+h1{
+    background-color: lightcoral;
+    width: 28%;
+}
+
+.div3{
+    background-color: aqua;
+}
