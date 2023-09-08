@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+   <title>Muziq</title>
+    
+       <!--Meta tags -->
+       <meta name="description" content="This is an archive that has our favourite music">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF-8">
+       <meta name="author" content="Sharanya Chandrashekar & Ananya Chandorkar">
+     
+    <!--Stylesheet-->
+    <link href="A3.css" rel="stylesheet" type="text/css">
+    
+    <!--Javascript-->
+    <script src="A3.js" type="text/javascript" defer></script>  
+    
+     <!-- Favicons -->
+    <link rel="icon" href="Logo.png">
+    
+</head>
+
+
+<body>
+    
+    <!-- The disclaimer overlay -->
+    <div class="overlay" id="disclaimer-overlay">
+        <!-- The disclaimer box -->
+        <div class="disclaimer-box">
+            <!-- The close button for the disclaimer -->
+            <span class="close-button" id="close-disclaimer" onclick="closeDisclaimer()">&times;</span>
+            <!-- Disclaimer content -->
+            <h2>Disclaimer</h2>
+            <p>
+            This music website is a collection of songs that we listen to. <br>These songs have been extracted from records and cds.
+                <br> <br>
+            This is made only for educational purposes<br></p>
+        </div>
+    </div>
+    
+    <!--Header-->
+    <header>
+        <!--Logo-->
+    <div class="logo">
+        <img src="Logo.png">
+        </div>
+        
+        <!--Artistwise Filter-->
+        <div class="dropdown">
+            <button class="dropbtn">Artists</button><br><br>
+            <div class="dropdown-content">
+            <a href="ABBA.html">ABBA</a>
+            <a href="Asha%20Bhosle.html">Asha Bhosle</a>
+            <a href="Kishore%20Kumar.html">Kishore Kumar</a>
+            <a href="Lata%20Mangeshkar.html">Lata Mangeshkar</a>
+            <a href="Mohammed%20Rafi.html">Mohammed Rafi</a>
+            <a href="Simon%20Garfunkel.html">Simon & Garfunkel</a>
+            </div>
+        </div>
+    
+    </header>
+    
+    
+    <main>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <a href="English.html"><img src="English_Carousel.jpg" style="width:100%"></a>
+    <div class="text">English</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <a href="Gujarati.html"><img src="Gujarati_Carousel.jpg" style="width:100%"></a>
+    <div class="text">Gujarati</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+      <a href="Hindi.html"><img src="Hindi_Carousel.jpg" style="width:100%"></a>
+    <div class="text">Hindi</div>
+  </div>
+    
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+   <a href="Marathi.html"> <img src="Marathi_Carousel.jpg" style="width:100%"></a>
+    <div class="text">Marathi</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+        
+<!-- Songs -->
+        <h2 class="h2">Shuffled Songs </h2><br>
+        <div class="shuffled-songs">
+     
+            <!--Songs imported by JSON displayed here-->
+     <div id="song-list"></div>
+            
+            
+    <div id="music-popup" class="pop-up">
+
+        <!-- Close Button -->
+    <button id="closePopupButton">X</button><br><br>
+        
+        <!--Album Art-->
+        <img id="album-art" src="" alt="Album Art"><br><br>
+    
+           <!--Audio Player-->
+<audio id="audio-player" controls autoplay></audio><br>
+        
+        <!--Previous Button-->
+<button id="prev-button"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="11 19 2 12 11 5 11 19" />
+    <polygon points="22 19 13 12 22 5 22 19" />
+  </svg>
+</button>
+
+            
+            <!--Next Button-->
+<button id="next-button"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="13 19 22 12 13 5 13 19" />
+    <polygon points="2 19 11 12 2 5 2 19" />
+  </svg></button>
+            
+         
+        
+        <p id="popup-song-name" src=""></p>
+        <p id="popup-singer" src=""></p>
+        
+  </div>          
+
+ 
+            
+</div>
+        
+        
+</main>
+    
+</body>
+
+</html>

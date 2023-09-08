@@ -1,0 +1,273 @@
+* {box-sizing:border-box}
+
+
+ /* Styling for the disclaimer overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* Styling for the disclaimer box */
+        .disclaimer-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+        }
+
+        /* Styling for the close button */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+/* Header */
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+
+/* Artist Filter using dropdown menu */
+.dropdown {
+    position: relative;
+    margin-right: 60px;
+    display: inline-block;
+     z-index: 1;
+}
+
+.dropbtn{
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    margin-right: 50px;
+    min-width: 100px;
+    background-color: purple;
+    color: white;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.dropdown-content:hover{
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  transition: 3.0s ease;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 650px;
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  position: absolute;
+  top: 3.7%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+background-color: black;
+  color: white; /* Optional: Set text color */
+  padding: 10px; /* Optional: Add padding to the text */
+}
+  /* Style for the number text */
+  .numbertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Add background color and adjust opacity */
+    color: white;
+    padding: 8px; /* Add padding to make text more readable */
+  }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.h2{
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 45%;
+    color: purple;
+    font-size: 30px;
+}
+
+/* Shuffled songs */
+.shuffled-songs{
+    display: flex;
+    width: 90%;
+    font-size: 20px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+     background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+
+#song-list{
+    margin-right: 5px;
+    cursor: pointer;
+     align-content: center;
+    justify-content: center;
+    
+   
+}
+
+#prev-button, #next-button, #closePopupButton {
+    margin-top:10px;
+    margin-right: 10px;
+    height: 25px;
+    width: 25p;
+}
+
+/* Popup Styles */
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Album Art Styles */
+#album-art {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/* Audio Player Styles (customize as needed) */
+#audio-player-popup {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Navigation Button Styles (customize as needed) */
+#prev-button-popup,
+#next-button-popup {
+     padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#closePopupButton {
+    margin-right: 270px ;
+}
+
+
+
+/* Styles for larger screens (desktop) */
+@media screen and (min-width: 400px) {
+    .dropdown-content {
+        padding: 20px;
+        margin-right: 0; /* Reset margin for larger screens */
+        min-width: 150px;
+    }
+
+}
+
+/* Styles for smaller screens (mobile) */
+@media screen and (max-width: 767px) {
+    .dropdown {
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+    
+  
+}
