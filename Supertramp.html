@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+   <title>Muziq</title>
+    
+       <!--Meta tags -->
+       <meta name="description" content="This is an archive that has our favourite music">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF-8">
+       <meta name="author" content="Sharanya Chandrashekar & Ananya Chandorkar">
+     
+    <!--Stylesheet-->
+    <link href="A3.css" rel="stylesheet" type="text/css">
+    <link href="artists.css" rel="stylesheet" type="text/css">
+    
+    <!--Javascript-->
+    <script src="Supertramp.js" type="text/javascript" defer></script>  
+    
+     <!-- Favicons -->
+    <link rel="icon" href="Logo.png">
+    
+</head>
+
+
+<body>
+  <!--Header-->
+    <header>
+        <!--Logo-->
+    <div class="logo">
+        <a href="A3.html"><img src="Logo.png"></a>
+        </div>
+        
+ </header><br>
+    
+    
+    <main>
+    
+        
+<!-- Songs -->
+        <h2 class="h2">Supertramp Songs </h2><br>
+        <div class="shuffled-songs">
+     
+            <!--Songs imported by JSON displayed here-->
+     <div id="song-list"></div>
+            
+            
+    <div id="music-popup" class="pop-up">
+
+        <!-- Close Button -->
+    <button id="closePopupButton">X</button><br><br>
+        
+        <!--Album Art-->
+        <img id="album-art" src="" alt="Album Art"><br><br>
+        
+        <!--Previous Button-->
+<button id="prev-button"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="11 19 2 12 11 5 11 19" />
+    <polygon points="22 19 13 12 22 5 22 19" />
+  </svg>
+</button>
+
+            
+            <!--Next Button-->
+<button id="next-button"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="13 19 22 12 13 5 13 19" />
+    <polygon points="2 19 11 12 2 5 2 19" />
+  </svg></button>
+            
+            <!--Audio Player-->
+<audio id="audio-player" controls autoplay></audio>
+     
+        <p id="popup-song-name" src=""></p>
+  </div>          
+           
+</div><br><br>
+     
+        <div class="singer-info"> <img src="Supertramp%20-%20Breakfast%20in%20America.jpg"> 
+        <p class="hidden-text">Supertramp were a British rock band that formed in London in 1970. They experienced their greatest global success in 1979 with their sixth album Breakfast in America. The group were distinguished for blending progressive rock and pop styles. <br>
+The band reached its commercial peak with 1979's Breakfast in America, which yielded the international top 10 singles "The Logical Song", "Breakfast in America", "Goodbye Stranger" and "Take the Long Way Home".<br> Their other top 40 hits included "Dreamer" (1974), "Give a Little Bit" (1977) and "It's Raining Again" (1982). 
+</p>
+        </div>  
+        
+</main>
+    
+</body>
+
+</html>
