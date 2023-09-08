@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+   <title>Muziq</title>
+    
+       <!--Meta tags -->
+       <meta name="description" content="This is an archive that has our favourite music">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF-8">
+       <meta name="author" content="Sharanya Chandrashekar & Ananya Chandorkar">
+     
+    <!--Stylesheet-->
+    <link href="A3.css" rel="stylesheet" type="text/css">
+    <link href="artists.css" rel="stylesheet" type="text/css">
+    
+    <!--Javascript-->
+    <script src="Lata%20Mangeshkar.js" type="text/javascript" defer></script>  
+    
+     <!-- Favicons -->
+    <link rel="icon" href="Logo.png">
+    
+</head>
+
+
+<body>
+  <!--Header-->
+    <header>
+        <!--Logo-->
+    <div class="logo">
+        <a href="A3.html"><img src="Logo.png"></a>
+        </div>
+        
+ </header><br>
+    
+    
+    <main>
+    
+        
+<!-- Songs -->
+        <h2 class="h2">Lata Mangeshkar Songs </h2><br>
+        <div class="shuffled-songs">
+     
+            <!--Songs imported by JSON displayed here-->
+     <div id="song-list"></div>
+            
+            
+    <div id="music-popup" class="pop-up">
+
+        <!-- Close Button -->
+    <button id="closePopupButton">X</button><br><br>
+        
+        <!--Album Art-->
+        <img id="album-art" src="" alt="Album Art"><br><br>
+        
+        <!--Previous Button-->
+<button id="prev-button"><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="11 19 2 12 11 5 11 19" />
+    <polygon points="22 19 13 12 22 5 22 19" />
+  </svg>
+</button>
+
+            
+            <!--Next Button-->
+<button id="next-button"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polygon points="13 19 22 12 13 5 13 19" />
+    <polygon points="2 19 11 12 2 5 2 19" />
+  </svg></button>
+            
+            <!--Audio Player-->
+<audio id="audio-player" controls autoplay></audio>
+       <p id="popup-song-name" src=""></p>
+        
+  </div>          
+           
+</div><br><br>
+     
+        <div class="singer-info"> <img src="Lata%20Mangeshkar.jpg"> 
+        <p class="hidden-text">Lata Mangeshkar born Hema Mangeshkar; 28 September 1929 – 6 February 2022) was an Indian playback singer and occasional music composer. She was the most celebrated singer in independent India and one of its most influential artists. <br>
+Her contribution to the Indian music industry in a career spanning eight decades gained her honorific titles such as the "Queen of Melody", "Nightingale of India", and "Voice of the Millennium".
+ (1970).
+
+</p>
+        </div>
+        
+</main>
+    
+</body>
+
+</html>
